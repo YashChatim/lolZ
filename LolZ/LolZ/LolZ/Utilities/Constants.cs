@@ -15,6 +15,6 @@ namespace LolZ.Utilities
 
         public static SummonerDTO Summoner { get; set; }
         public static string Region { get; set; }
-        public static string SummonerId = "d1U_nDQrQ2-3rZJAqLFjJ2YP5QLfNNv96IF_auqtwJ_DxiU";
-    }
+        public static string SummonerId { get; set; }
+}
 }

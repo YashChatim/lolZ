@@ -1,4 +1,5 @@
 ﻿using LolZ.Controller;
+using LolZ.Utilities;
 using LolZ.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -31,6 +32,7 @@ namespace LolZ
         {
             if (mainController.GetSummoner(mainViewModel.SummonerName))
             {
+                Constants.SummonerId = Constants.Summoner.Id;
                 await Navigation.PushAsync(new ChampionMasteryPage());
             }
 
