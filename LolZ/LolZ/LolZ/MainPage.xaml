@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LolZ.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="LightBlue">
+            <FlexLayout BackgroundColor="LawnGreen" Direction="Column" Margin="30">
+                <Picker x:Name="summonerRegionPicker" Title="Select a region" SelectedItem="{Binding Region}">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>BR1</x:String>
+                            <x:String>EUN1</x:String>
+                            <x:String>EUW1</x:String>
+                            <x:String>JP1</x:String>
+                            <x:String>KR</x:String>
+                            <x:String>LA1</x:String>
+                            <x:String>LA2</x:String>
+                            <x:String>NA1</x:String>
+                            <x:String>OC1</x:String>
+                            <x:String>TR1</x:String>
+                            <x:String>RU</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                
+                <Entry x:Name="summonerNameEntry" Placeholder="Enter a summoner name" Text="{Binding SummonerName}" />
+                <Button x:Name="championMasteryButton" Text="Search summoner" Clicked="championMasteryButton_Clicked" />
+            </FlexLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

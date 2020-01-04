@@ -1,0 +1,18 @@
+﻿using LolZ.Model;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace LolZ.Utilities
+{
+    public class Constants
+    {
+        public static string RiotPath = ".api.riotgames.com/lol/";
+        public static string ChampionMasteryPath = "champion-mastery/v4/champion-masteries/by-summoner/";
+        public static string ApiKey = "RGAPI-f1456e57-1250-45a3-be99-3cd2f023ae78";
+
+        public static SummonerDTO Summoner { get; set; }
+        public static string Region { get; set; }
+        public static string SummonerId = "d1U_nDQrQ2-3rZJAqLFjJ2YP5QLfNNv96IF_auqtwJ_DxiU";
+    }
+}
