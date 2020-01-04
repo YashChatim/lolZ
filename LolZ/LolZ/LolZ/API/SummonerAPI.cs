@@ -1,4 +1,5 @@
 ﻿using LolZ.Model;
+using LolZ.Utilities;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ namespace LolZ.API
 
         public SummonerDTO GetSummonerByName(string summonerName)
         {
-            string path = "summoner/v4/summoners/by-name/" + summonerName;
+            string path = Constants.SummonerNamePath + summonerName;
 
             var response = GET(GetURI(path));
             string context = response.Content.ReadAsStringAsync().Result;
