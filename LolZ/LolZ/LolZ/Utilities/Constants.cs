@@ -16,5 +16,6 @@ namespace LolZ.Utilities
         public static SummonerDTO Summoner { get; set; }
         public static string Region { get; set; }
         public static string SummonerId { get; set; }
+        public static long ChampionId { get; set; }
 }
 }

@@ -10,5 +10,6 @@ namespace LolZ.Model
         public int ChampionLevel { get; set; }
         public int ChampionPoints { get; set; }
         public bool ChestGranted { get; set; }
+        public string ChampionName { get; set; }
     }
 }

@@ -11,7 +11,7 @@
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout Orientation="Horizontal">
-                            <Label x:Name="championIdLabel" Text="{Binding ChampionId}" />
+                            <Label x:Name="championIdLabel" Text="{Binding ChampionName}" />
                             <Label x:Name="championLevelLabel" Text="{Binding ChampionLevel}" />
                             <Label x:Name="championPointsLabel" Text="{Binding ChampionPoints}" />
                             <Label x:Name="chestGrantedLabel" Text="{Binding ChestGranted}" />

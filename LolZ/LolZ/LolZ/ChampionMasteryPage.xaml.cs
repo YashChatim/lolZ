@@ -29,6 +29,13 @@ namespace LolZ
             var response = await httpClient.GetStringAsync(request);
 
             var championMastery = JsonConvert.DeserializeObject<List<ChampionMasteryDTO>>(response);
+
+            for (int i = 0; i < championMastery.Count; i++)
+            {
+                Constants.ChampionId = championMastery[i].ChampionId;
+                championMastery[i].ChampionName = ChampionNames.ChampionNamesAccordingToChampionId();
+            }
+
             championMasteryListView.ItemsSource = championMastery;
         }
     }
