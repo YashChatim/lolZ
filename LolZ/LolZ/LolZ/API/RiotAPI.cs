@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LolZ.Utilities;
+using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
@@ -12,7 +13,6 @@ namespace LolZ.API
 
         public RiotAPI(string region)
         {
-            Key = "RGAPI-f1456e57-1250-45a3-be99-3cd2f023ae78";
             Region = region;
         }
 
@@ -29,7 +29,7 @@ namespace LolZ.API
 
         protected string GetURI(string path)
         {
-            return "https://" + Region + ".api.riotgames.com/lol/" + path + "?api_key=" + Key;
+            return "https://" + Region + Constants.RiotPath + path + "?api_key=" + Constants.ApiKey;
         }
     }
 }
