@@ -11,5 +11,6 @@ namespace LolZ.Model
         public int ChampionPoints { get; set; }
         public bool ChestGranted { get; set; }
         public string ChampionName { get; set; }
+        public string ChampionImage { get; set; }
     }
 }

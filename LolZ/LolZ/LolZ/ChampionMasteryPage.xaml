@@ -8,13 +8,13 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical"
              VerticalOptions="Fill"
-             HorizontalOptions="StartAndExpand">
-            <ListView x:Name="championMasteryListView" VerticalOptions="FillAndExpand" RowHeight="100">
+             HorizontalOptions="StartAndExpand" BackgroundColor="Black">
+            <ListView x:Name="championMasteryListView" VerticalOptions="FillAndExpand" RowHeight="120">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
-                                <Grid>
+                                <Grid Margin="10">
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="auto" />
                                         <RowDefinition Height="auto" />
@@ -25,17 +25,20 @@
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="auto" />
                                         <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition Width="auto" />
                                     </Grid.ColumnDefinitions>
 
-                                    <Label  Text="Champion Name:" Grid.Row="0" Grid.Column="0" FontAttributes="Bold" />
-                                    <Label  Text="Champion Level:" Grid.Row="1" Grid.Column="0" FontAttributes="Bold" />
-                                    <Label Text="Mastery Points:" Grid.Row="2" Grid.Column="0" FontAttributes="Bold" />
-                                    <Label Text="Chest Earned:" Grid.Row="3" Grid.Column="0" FontAttributes="Bold" />
+                                    <Image Source="{Binding ChampionImage}" HeightRequest="100" WidthRequest="100" Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" />
+                                    
+                                    <Label Text="Champion Name:" TextColor="Gold" Grid.Row="0" Grid.Column="1" FontAttributes="Bold" />
+                                    <Label Text="Champion Level:" TextColor="Gold" Grid.Row="1" Grid.Column="1" FontAttributes="Bold" />
+                                    <Label Text="Mastery Points:" TextColor="Gold" Grid.Row="2" Grid.Column="1" FontAttributes="Bold" />
+                                    <Label Text="Chest Earned:" TextColor="Gold" Grid.Row="3" Grid.Column="1" FontAttributes="Bold" />
 
-                                    <Label x:Name="championIdLabel" Text="{Binding ChampionName}" Grid.Row="0" Grid.Column="1" />
-                                    <Label x:Name="championLevelLabel" Text="{Binding ChampionLevel}" Grid.Row="1" Grid.Column="1" />
-                                    <Label x:Name="championPointsLabel" Text="{Binding ChampionPoints}" Grid.Row="2" Grid.Column="1" />
-                                    <Label x:Name="chestGrantedLabel" Text="{Binding ChestGranted}" Grid.Row="3" Grid.Column="1" />
+                                    <Label x:Name="championIdLabel" Text="{Binding ChampionName}" TextColor="Gold" Grid.Row="0" Grid.Column="2" />
+                                    <Label x:Name="championLevelLabel" Text="{Binding ChampionLevel}" TextColor="Gold" Grid.Row="1" Grid.Column="2" />
+                                    <Label x:Name="championPointsLabel" Text="{Binding ChampionPoints}" TextColor="Gold" Grid.Row="2" Grid.Column="2" />
+                                    <Label x:Name="chestGrantedLabel" Text="{Binding ChestGranted}" TextColor="Gold" Grid.Row="3" Grid.Column="2" />
                                 </Grid>
                             </ViewCell.View>
                         </ViewCell>

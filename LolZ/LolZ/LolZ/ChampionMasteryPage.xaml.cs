@@ -34,6 +34,7 @@ namespace LolZ
             {
                 Constants.ChampionId = championMastery[i].ChampionId;
                 championMastery[i].ChampionName = ChampionNames.ChampionNamesAccordingToChampionId();
+                championMastery[i].ChampionImage = Constants.ChampionImageUrl;
             }
 
             championMasteryListView.ItemsSource = championMastery;
