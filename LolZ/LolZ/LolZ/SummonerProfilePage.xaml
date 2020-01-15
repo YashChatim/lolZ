@@ -7,7 +7,7 @@
              x:Class="LolZ.SummonerProfilePage">
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="summonerProfileListView" VerticalOptions="FillAndExpand" RowHeight="1000">
+            <ListView x:Name="summonerProfileListView" VerticalOptions="FillAndExpand" RowHeight="500" BackgroundColor="Accent">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -19,31 +19,25 @@
                                         <RowDefinition Height="auto" />
                                         <RowDefinition Height="auto" />
                                         <RowDefinition Height="auto" />
-                                        <RowDefinition Height="auto" />
-                                        <RowDefinition Height="auto" />
                                     </Grid.RowDefinitions>
 
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="auto" />
-                                        <ColumnDefinition Width="auto" />
-                                        <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
 
-                                    <Label Text="Summoner Name:" Grid.Row="0" Grid.Column="1" FontAttributes="Bold" />
-                                    <Label Text="QueueType:" Grid.Row="1" Grid.Column="1" FontAttributes="Bold" />
-                                    <Label Text="Wins:" Grid.Row="2" Grid.Column="1" FontAttributes="Bold" />
-                                    <Label Text="Losses:" Grid.Row="3" Grid.Column="1" FontAttributes="Bold" />
-                                    <Label Text="Tier:" Grid.Row="4" Grid.Column="1" FontAttributes="Bold" />
-                                    <Label Text="Rank:" Grid.Row="5" Grid.Column="1" FontAttributes="Bold" />
-                                    <Label Text="League Points:" Grid.Row="6" Grid.Column="1" FontAttributes="Bold" />
+                                    <Label Text="LP" Grid.Row="3" Grid.Column="1" />
+                                    <Label Text="Wins" Grid.Row="4" Grid.Column="1" />
+                                    <Label Text="Losses" Grid.Row="5" Grid.Column="1" />
+                                    
 
-                                    <Label x:Name="summonerNameLabel" Text="{Binding SummonerName}" Grid.Row="0" Grid.Column="2" />
-                                    <Label x:Name="queueTypeLabel" Text="{Binding QueueType}" Grid.Row="1" Grid.Column="2" />
-                                    <Label x:Name="winsLabel" Text="{Binding Wins}" Grid.Row="2" Grid.Column="2" />
-                                    <Label x:Name="lossesLabel" Text="{Binding Losses}" Grid.Row="3" Grid.Column="2" />
-                                    <Label x:Name="tierLabel" Text="{Binding Tier}" Grid.Row="4" Grid.Column="2" />
-                                    <Label x:Name="rankLabel" Text="{Binding Rank}" Grid.Row="5" Grid.Column="2" />
-                                    <Label x:Name="leaguePointsLabel" Text="{Binding LeaguePoints}" Grid.Row="6" Grid.Column="2" />
+                                    <Label x:Name="summonerNameLabel" Text="{Binding SummonerName}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="50" HorizontalTextAlignment="Center" />
+                                    <Label x:Name="queueTypeLabel" Text="{Binding QueueType}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" />
+                                    <Label x:Name="tierLabel" Text="{Binding Tier}" Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="End" />
+                                    <Label x:Name="rankLabel" Text="{Binding Rank}" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Start" />
+                                    <Label x:Name="leaguePointsLabel" Text="{Binding LeaguePoints}" Grid.Row="3" Grid.Column="0" HorizontalTextAlignment="End" />
+                                    <Label x:Name="winsLabel" Text="{Binding Wins}" Grid.Row="4" Grid.Column="0" HorizontalTextAlignment="End" />
+                                    <Label x:Name="lossesLabel" Text="{Binding Losses}" Grid.Row="5" Grid.Column="0" HorizontalTextAlignment="End" />
                                 </Grid>
                             </ViewCell.View>
                         </ViewCell>
