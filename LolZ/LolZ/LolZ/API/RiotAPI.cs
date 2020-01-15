@@ -8,7 +8,6 @@ namespace LolZ.API
 {
     public class RiotAPI
     {
-        public string Key { get; set; }
         public string Region { get; set; }
 
         public RiotAPI(string region)
