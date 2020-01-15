@@ -16,14 +16,14 @@ D:\C#\lolZ\LolZ\LolZ\LolZ\bin\Debug\netstandard2.0\LolZ.deps.json
 D:\C#\lolZ\LolZ\LolZ\LolZ\bin\Debug\netstandard2.0\LolZ.dll
 D:\C#\lolZ\LolZ\LolZ\LolZ\bin\Debug\netstandard2.0\ref\LolZ.dll
 D:\C#\lolZ\LolZ\LolZ\LolZ\bin\Debug\netstandard2.0\LolZ.pdb
+D:\C#\lolZ\LolZ\LolZ\LolZ\obj\Debug\netstandard2.0\LolZ.csprojAssemblyReference.cache
 D:\C#\lolZ\LolZ\LolZ\LolZ\obj\Debug\netstandard2.0\App.xaml.g.cs
 D:\C#\lolZ\LolZ\LolZ\LolZ\obj\Debug\netstandard2.0\ChampionMasteryPage.xaml.g.cs
 D:\C#\lolZ\LolZ\LolZ\LolZ\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\C#\lolZ\LolZ\LolZ\LolZ\obj\Debug\netstandard2.0\SummonerProfilePage.xaml.g.cs
 D:\C#\lolZ\LolZ\LolZ\LolZ\obj\Debug\netstandard2.0\LolZ.AssemblyInfoInputs.cache
 D:\C#\lolZ\LolZ\LolZ\LolZ\obj\Debug\netstandard2.0\LolZ.AssemblyInfo.cs
 D:\C#\lolZ\LolZ\LolZ\LolZ\obj\Debug\netstandard2.0\XamlC.stamp
 D:\C#\lolZ\LolZ\LolZ\LolZ\obj\Debug\netstandard2.0\LolZ.dll
 D:\C#\lolZ\LolZ\LolZ\LolZ\obj\Debug\netstandard2.0\ref\LolZ.dll
 D:\C#\lolZ\LolZ\LolZ\LolZ\obj\Debug\netstandard2.0\LolZ.pdb
-D:\C#\lolZ\LolZ\LolZ\LolZ\obj\Debug\netstandard2.0\LolZ.csprojAssemblyReference.cache
-D:\C#\lolZ\LolZ\LolZ\LolZ\obj\Debug\netstandard2.0\SummonerProfilePage.xaml.g.cs
