@@ -28,7 +28,8 @@
                 </Picker>
                 
                 <Entry x:Name="summonerNameEntry" Placeholder="Enter a summoner name" Text="{Binding SummonerName}" />
-                <Button x:Name="championMasteryButton" Text="Search summoner" Clicked="championMasteryButton_Clicked" />
+                <Button x:Name="championMasteryButton" Text="Search summoner champions" Clicked="championMasteryButton_Clicked" />
+                <Button x:Name="summonerProfileButton" Text="Search summoner details" Clicked="summonerProfileButton_Clicked" />
             </FlexLayout>
         </StackLayout>
     </ContentPage.Content>

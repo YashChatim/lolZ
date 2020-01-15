@@ -9,8 +9,9 @@ namespace LolZ.Utilities
     {
         public static string ApiKey = "RGAPI-69da348f-1551-4d13-93b5-6b46d29fbff2";
         public static string RiotPath = ".api.riotgames.com/lol/";
-        public static string ChampionMasteryPath = "champion-mastery/v4/champion-masteries/by-summoner/";
         public static string SummonerNamePath = "summoner/v4/summoners/by-name/";
+        public static string ChampionMasteryPath = "champion-mastery/v4/champion-masteries/by-summoner/";
+        public static string SummonerProfilePath = "league/v4/entries/by-summoner/";
         public static string ChampionImagePath = "https://ddragon.leagueoflegends.com/cdn/9.24.2/img/champion/";
 
 

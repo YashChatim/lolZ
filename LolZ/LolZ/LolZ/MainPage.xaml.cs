@@ -38,5 +38,16 @@ namespace LolZ
 
             else { await DisplayAlert("Alert", "You have been alerted", "Not found"); }            
         }
+
+        private async void summonerProfileButton_Clicked(object sender, EventArgs e)
+        {
+            if (mainController.GetSummoner(mainViewModel.SummonerName))
+            {
+                Constants.SummonerId = Constants.Summoner.Id;
+                await Navigation.PushAsync(new SummonerProfilePage());
+            }
+
+            else { await DisplayAlert("Alert", "You have been alerted", "Not found"); }
+        }
     }
 }
