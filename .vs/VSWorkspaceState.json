@@ -2,7 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\LolZ",
-    "\\LolZ\\LolZ"
+    "\\LolZ\\LolZ",
+    "\\LolZ\\LolZ\\LolZ",
+    "\\LolZ\\LolZ\\LolZ.Android",
+    "\\LolZ\\LolZ\\LolZ.Android\\Resources",
+    "\\LolZ\\LolZ\\LolZ.Android\\Resources\\drawable"
   ],
+  "SelectedNode": "\\LolZ\\LolZ\\LolZ.Android\\Resources\\drawable\\leagueLogo.png",
   "PreviewInSolutionExplorer": false
 }

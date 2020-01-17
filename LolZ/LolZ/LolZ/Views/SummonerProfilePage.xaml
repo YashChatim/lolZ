@@ -7,13 +7,14 @@
              x:Class="LolZ.SummonerProfilePage">
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="summonerProfileListView" VerticalOptions="FillAndExpand" RowHeight="500" BackgroundColor="Accent">
+            <ListView x:Name="summonerProfileListView" VerticalOptions="FillAndExpand" RowHeight="500" BackgroundColor="Black">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
                                 <Grid Margin="10">
                                     <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto" />
                                         <RowDefinition Height="auto" />
                                         <RowDefinition Height="auto" />
                                         <RowDefinition Height="auto" />
@@ -26,18 +27,20 @@
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
 
-                                    <Label Text="LP" Grid.Row="3" Grid.Column="1" />
-                                    <Label Text="Wins" Grid.Row="4" Grid.Column="1" />
-                                    <Label Text="Losses" Grid.Row="5" Grid.Column="1" />
-                                    
+                                    <Label Text="Level" TextColor="Gold" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="End" FontAttributes="Bold" />
+                                    <Label Text="LP" TextColor="Gold" Grid.Row="4" Grid.Column="1" FontAttributes="Bold" />
+                                    <Label Text="Wins" TextColor="Gold" Grid.Row="5" Grid.Column="1" FontAttributes="Bold" />
+                                    <Label Text="Losses" TextColor="Gold" Grid.Row="6" Grid.Column="1" FontAttributes="Bold" />
 
-                                    <Label x:Name="summonerNameLabel" Text="{Binding SummonerName}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="50" HorizontalTextAlignment="Center" />
-                                    <Label x:Name="queueTypeLabel" Text="{Binding QueueType}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" />
-                                    <Label x:Name="tierLabel" Text="{Binding Tier}" Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="End" />
-                                    <Label x:Name="rankLabel" Text="{Binding Rank}" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Start" />
-                                    <Label x:Name="leaguePointsLabel" Text="{Binding LeaguePoints}" Grid.Row="3" Grid.Column="0" HorizontalTextAlignment="End" />
-                                    <Label x:Name="winsLabel" Text="{Binding Wins}" Grid.Row="4" Grid.Column="0" HorizontalTextAlignment="End" />
-                                    <Label x:Name="lossesLabel" Text="{Binding Losses}" Grid.Row="5" Grid.Column="0" HorizontalTextAlignment="End" />
+
+                                    <Label x:Name="summonerNameLabel" Text="{Binding SummonerName}" TextColor="Gold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="50" HorizontalTextAlignment="Center" FontAttributes="Bold"  />
+                                    <Label x:Name="summonerLevelLabel" Text="{Binding SummonerLevel}" TextColor="Gold" Grid.Row="1" Grid.Column="1" />
+                                    <Label x:Name="queueTypeLabel" Text="{Binding QueueType}" TextColor="Gold" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" />
+                                    <Label x:Name="tierLabel" Text="{Binding Tier}" TextColor="Gold" Grid.Row="3" Grid.Column="0" HorizontalTextAlignment="End" />
+                                    <Label x:Name="rankLabel" Text="{Binding Rank}" TextColor="Gold" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Start" />
+                                    <Label x:Name="leaguePointsLabel" Text="{Binding LeaguePoints}" TextColor="Gold" Grid.Row="4" Grid.Column="0" HorizontalTextAlignment="End" />
+                                    <Label x:Name="winsLabel" Text="{Binding Wins}" TextColor="Gold" Grid.Row="5" Grid.Column="0" HorizontalTextAlignment="End" />
+                                    <Label x:Name="lossesLabel" Text="{Binding Losses}" TextColor="Gold" Grid.Row="6" Grid.Column="0" HorizontalTextAlignment="End" />
                                 </Grid>
                             </ViewCell.View>
                         </ViewCell>

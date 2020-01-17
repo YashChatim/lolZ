@@ -13,5 +13,6 @@ namespace LolZ.Model
         public string Tier { get; set; }
         public string Rank { get; set; }
         public int LeaguePoints { get; set; }
+        public long SummonerLevel { get; set; }
     }
 }

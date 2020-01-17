@@ -30,7 +30,8 @@ namespace LolZ
             var response = await httpClient.GetStringAsync(request);
 
             var summonerProfile = JsonConvert.DeserializeObject<List<SummonerProfileDTO>>(response);
-            if(summonerProfile.Count == 0)
+
+            if (summonerProfile.Count == 0)
             {
                 await DisplayAlert(Constants.SummonerName.ToUpper(), Constants.SummonerName.ToUpper() + " hasn't played in 2020" , "Search again");
                 await Navigation.PushAsync(new MainPage());
@@ -39,6 +40,10 @@ namespace LolZ
 
             else
             {
+                for (int i = 0; i < summonerProfile.Count; i++)
+                {
+                    summonerProfile[i].SummonerLevel = Constants.SummonerLevel;
+                }
                 summonerProfileListView.ItemsSource = summonerProfile;
             }
         }

@@ -8,6 +8,7 @@
 
     <ContentPage.Content>
         <StackLayout BackgroundColor="Black">
+            <Image Source="https://i.ya-webdesign.com/images/league-of-legends-logo-png-9.png" />
             <FlexLayout BackgroundColor="SlateGray" Direction="Column" Margin="20">
                 <Picker x:Name="summonerRegionPicker" Title="Select a region" SelectedItem="{Binding Region}">
                     <Picker.ItemsSource>
