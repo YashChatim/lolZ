@@ -35,6 +35,7 @@ namespace LolZ
 
             else if (mainViewModel.GetSummoner(mainViewModel.SummonerName))
             {
+                Constants.SummonerName = mainViewModel.SummonerName;
                 Constants.SummonerId = Constants.Summoner.Id;
                 await Navigation.PushAsync(new SummonerProfilePage());
             }

@@ -10,6 +10,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using LolZ.Utilities;
 using LolZ.Model;
+using LolZ.ViewModel;
 
 namespace LolZ
 {
@@ -29,8 +30,17 @@ namespace LolZ
             var response = await httpClient.GetStringAsync(request);
 
             var summonerProfile = JsonConvert.DeserializeObject<List<SummonerProfileDTO>>(response);
+            if(summonerProfile.Count == 0)
+            {
+                await DisplayAlert(Constants.SummonerName.ToUpper(), Constants.SummonerName.ToUpper() + " hasn't played in 2020" , "Search again");
+                await Navigation.PushAsync(new MainPage());
+                return;
+            }
 
-            summonerProfileListView.ItemsSource = summonerProfile;
+            else
+            {
+                summonerProfileListView.ItemsSource = summonerProfile;
+            }
         }
     }
 }
