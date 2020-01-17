@@ -27,7 +27,13 @@ namespace LolZ
 
         private async void summonerProfileButton_Clicked(object sender, EventArgs e)
         {
-            if (mainViewModel.GetSummoner(mainViewModel.SummonerName))
+            if (string.IsNullOrEmpty(mainViewModel.Region) || string.IsNullOrEmpty(mainViewModel.SummonerName))
+            {
+                await DisplayAlert("Warning!!!", "Region or SummonerName field is empty", "Retry");
+                return;
+            }
+
+            else if (mainViewModel.GetSummoner(mainViewModel.SummonerName))
             {
                 Constants.SummonerId = Constants.Summoner.Id;
                 await Navigation.PushAsync(new SummonerProfilePage());
@@ -38,7 +44,13 @@ namespace LolZ
 
         private async void championMasteryButton_Clicked(object sender, EventArgs e)
         {
-            if (mainViewModel.GetSummoner(mainViewModel.SummonerName))
+            if (string.IsNullOrEmpty(mainViewModel.Region) || string.IsNullOrEmpty(mainViewModel.SummonerName))
+            {
+                await DisplayAlert("Warning!!!", "Region or SummonerName field is empty", "Retry");
+                return;
+            }
+
+            else if (mainViewModel.GetSummoner(mainViewModel.SummonerName))
             {
                 Constants.SummonerId = Constants.Summoner.Id;
                 await Navigation.PushAsync(new ChampionMasteryPage());
