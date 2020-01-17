@@ -1,5 +1,4 @@
-﻿using LolZ.Controller;
-using LolZ.Utilities;
+﻿using LolZ.Utilities;
 using LolZ.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -16,12 +15,10 @@ namespace LolZ
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        MainController mainController;
         MainViewModel mainViewModel;
 
         public MainPage()
         {
-            mainController = new MainController();
             mainViewModel = new MainViewModel();
             InitializeComponent();
 
@@ -30,24 +27,24 @@ namespace LolZ
 
         private async void summonerProfileButton_Clicked(object sender, EventArgs e)
         {
-            if (mainController.GetSummoner(mainViewModel.SummonerName))
+            if (mainViewModel.GetSummoner(mainViewModel.SummonerName))
             {
                 Constants.SummonerId = Constants.Summoner.Id;
                 await Navigation.PushAsync(new SummonerProfilePage());
             }
 
-            else { await DisplayAlert("Alert", "You have been alerted", "Not found"); }
+            else { await DisplayAlert("Warning!!!", "Summoner not found", "Retry"); }
         }
 
         private async void championMasteryButton_Clicked(object sender, EventArgs e)
         {
-            if (mainController.GetSummoner(mainViewModel.SummonerName))
+            if (mainViewModel.GetSummoner(mainViewModel.SummonerName))
             {
                 Constants.SummonerId = Constants.Summoner.Id;
                 await Navigation.PushAsync(new ChampionMasteryPage());
             }
 
-            else { await DisplayAlert("Alert", "You have been alerted", "Not found"); }
+            else { await DisplayAlert("Warning!!!", "Summoner not found", "Retry"); }
         }
     }
 }

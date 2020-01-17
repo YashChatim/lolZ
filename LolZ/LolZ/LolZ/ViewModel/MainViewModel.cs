@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel;
+using LolZ.API;
 using LolZ.Utilities;
 
 namespace LolZ.ViewModel
@@ -30,6 +31,15 @@ namespace LolZ.ViewModel
         {
             get { return summonerName; }
             set { summonerName = value; NotifyPropertyChanged("SummonerName"); }
+        }
+
+        public bool GetSummoner(string summonerName)
+        {
+            SummonerAPI summonerAPI = new SummonerAPI(Constants.Region);
+            var summoner = summonerAPI.GetSummonerByName(summonerName);
+            Constants.Summoner = summoner;
+
+            return summoner != null;
         }
     }
 }

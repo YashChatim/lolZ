@@ -7,7 +7,7 @@ namespace LolZ.Utilities
 {
     public class Constants
     {
-        public static string ApiKey = "RGAPI-69da348f-1551-4d13-93b5-6b46d29fbff2";
+        public static string ApiKey = "RGAPI-9d7dd063-1f6d-43aa-abfc-08edc02fc8d5";
         public static string RiotPath = ".api.riotgames.com/lol/";
         public static string SummonerNamePath = "summoner/v4/summoners/by-name/";
         public static string ChampionMasteryPath = "champion-mastery/v4/champion-masteries/by-summoner/";
