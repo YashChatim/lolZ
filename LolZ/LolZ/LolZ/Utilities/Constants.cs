@@ -7,7 +7,7 @@ namespace LolZ.Utilities
 {
     public class Constants
     {
-        public static string ApiKey = "RGAPI-9d7dd063-1f6d-43aa-abfc-08edc02fc8d5";
+        public static string ApiKey = "RGAPI-7d1b7767-8ad9-45d2-911d-470b19158a55";
         public static string RiotPath = ".api.riotgames.com/lol/";
         public static string SummonerNamePath = "summoner/v4/summoners/by-name/";
         public static string ChampionMasteryPath = "champion-mastery/v4/champion-masteries/by-summoner/";
@@ -22,5 +22,6 @@ namespace LolZ.Utilities
         public static string SummonerId { get; set; }
         public static long ChampionId { get; set; }
         public static string ChampionImageUrl { get; set; }
+        public static string SummonerTier { get; set; }
 }
 }
