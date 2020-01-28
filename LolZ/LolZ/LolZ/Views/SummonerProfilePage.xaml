@@ -41,6 +41,7 @@
                                     <Label x:Name="leaguePointsLabel" Text="{Binding LeaguePoints}" TextColor="Gold" Grid.Row="4" Grid.Column="0" HorizontalTextAlignment="End" />
                                     <Label x:Name="winsLabel" Text="{Binding Wins}" TextColor="Gold" Grid.Row="5" Grid.Column="0" HorizontalTextAlignment="End" />
                                     <Label x:Name="lossesLabel" Text="{Binding Losses}" TextColor="Gold" Grid.Row="6" Grid.Column="0" HorizontalTextAlignment="End" />
+                                    <Image Source="{Binding SummonerTierImage}" HeightRequest="100" WidthRequest="100" Grid.Row="6" Grid.Column="0" />
                                 </Grid>
                             </ViewCell.View>
                         </ViewCell>

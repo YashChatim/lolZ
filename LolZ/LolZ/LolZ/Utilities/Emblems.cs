@@ -11,17 +11,17 @@ namespace LolZ.Utilities
             string result;
             switch (Constants.SummonerTier)
             {
-                case "IRON": result = "https://vignette.wikia.nocookie.net/leagueoflegends/images/3/32/Season_2019_-_Iron_Trim.png/revision/latest/scale-to-width-down/120?cb=20181203181632"; break;
-                case "BRONZE": result = "https://vignette.wikia.nocookie.net/leagueoflegends/images/3/30/Season_2019_-_Bronze_Trim.png/revision/latest/scale-to-width-down/120?cb=20181203181628"; break;
-                case "SILVER": result = "https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c3/Season_2019_-_Silver_Trim.png/revision/latest/scale-to-width-down/120?cb=20181203181635"; break;
-                case "GOLD": result = "https://vignette.wikia.nocookie.net/leagueoflegends/images/4/4b/Season_2019_-_Gold_Trim.png/revision/latest/scale-to-width-down/120?cb=20181203181631"; break;
-                case "PLATINUM": result = "https://vignette.wikia.nocookie.net/leagueoflegends/images/f/f8/Season_2019_-_Platinum_Trim.png/revision/latest/scale-to-width-down/120?cb=20181203181634"; break;
-                case "DIAMOND": result = "https://vignette.wikia.nocookie.net/leagueoflegends/images/d/d2/Season_2019_-_Diamond_Trim.png/revision/latest/scale-to-width-down/120?cb=20181203181630"; break;
-                case "MASTER": result = "https://vignette.wikia.nocookie.net/leagueoflegends/images/f/f2/Season_2019_-_Master_Trim.png/revision/latest/scale-to-width-down/120?cb=20181203181633"; break;
-                case "GRANDMASTER": result = "https://vignette.wikia.nocookie.net/leagueoflegends/images/8/83/Season_2019_-_Grandmaster_Trim.png/revision/latest/scale-to-width-down/120?cb=20181203181632"; break;
-                case "CHALLENGER": result = "https://vignette.wikia.nocookie.net/leagueoflegends/images/d/d3/Season_2019_-_Challenger_Trim.png/revision/latest/scale-to-width-down/120?cb=20181203181629"; break;
-                default: result = "https://vignette.wikia.nocookie.net/leagueoflegends/images/d/de/Season_2019_-_Default_Trim.png/revision/latest/scale-to-width-down/120?cb=20181203181630"; break;
-            }
+                case "IRON": result = Constants.SummonerTierImageStartPath + "3/32/Season_2019_-_Iron_Trim.png/" + Constants.SummonerTierImageEndPath + "32"; break;
+                case "BRONZE": result = Constants.SummonerTierImageStartPath + "3/30/Season_2019_-_Bronze_Trim.png/" + Constants.SummonerTierImageEndPath + "28"; break;
+                case "SILVER": result = Constants.SummonerTierImageStartPath + "c/c3/Season_2019_-_Silver_Trim.png/" + Constants.SummonerTierImageEndPath + "35"; break;
+                case "GOLD": result = Constants.SummonerTierImageStartPath + "4/4b/Season_2019_-_Gold_Trim.png/" + Constants.SummonerTierImageEndPath + "31"; break;
+                case "PLATINUM": result = Constants.SummonerTierImageStartPath + "f/f8/Season_2019_-_Platinum_Trim.png/" + Constants.SummonerTierImageEndPath + "34"; break;
+                case "DIAMOND": result = Constants.SummonerTierImageStartPath + "d/d2/Season_2019_-_Diamond_Trim.png/" + Constants.SummonerTierImageEndPath + "30"; break;
+                case "MASTER": result = Constants.SummonerTierImageStartPath + "f/f2/Season_2019_-_Master_Trim.png/" + Constants.SummonerTierImageEndPath + "33"; break;
+                case "GRANDMASTER": result = Constants.SummonerTierImageStartPath + "8/83/Season_2019_-_Grandmaster_Trim.png/" + Constants.SummonerTierImageEndPath + "32"; break;
+                case "CHALLENGER": result = Constants.SummonerTierImageStartPath + "d/d3/Season_2019_-_Challenger_Trim.png/" + Constants.SummonerTierImageEndPath + "29"; break;
+                default: result = Constants.SummonerTierImageStartPath + "d/de/Season_2019_-_Default_Trim.png/" + Constants.SummonerTierImageEndPath + "30"; break;
+            };
             return result;
         }
     }

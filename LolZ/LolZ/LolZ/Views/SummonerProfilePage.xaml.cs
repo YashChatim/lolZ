@@ -42,7 +42,9 @@ namespace LolZ
             {
                 for (int i = 0; i < summonerProfile.Count; i++)
                 {
+                    Constants.SummonerTier = summonerProfile[i].Tier;
                     summonerProfile[i].SummonerLevel = Constants.SummonerLevel;
+                    summonerProfile[i].SummonerTierImage = Emblems.EmblemsAccordingToRanks();
                 }
                 summonerProfileListView.ItemsSource = summonerProfile;
             }

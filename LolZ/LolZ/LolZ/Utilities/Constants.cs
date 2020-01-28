@@ -13,6 +13,8 @@ namespace LolZ.Utilities
         public static string ChampionMasteryPath = "champion-mastery/v4/champion-masteries/by-summoner/";
         public static string SummonerProfilePath = "league/v4/entries/by-summoner/";
         public static string ChampionImagePath = "https://ddragon.leagueoflegends.com/cdn/9.24.2/img/champion/";
+        public static string SummonerTierImageStartPath = "https://vignette.wikia.nocookie.net/leagueoflegends/images/";
+        public static string SummonerTierImageEndPath = "revision/latest/scale-to-width-down/120?cb=201812031816";
 
 
         public static SummonerDTO Summoner { get; set; }
